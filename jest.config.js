@@ -5,7 +5,7 @@ module.exports = {
   testPathIgnorePatterns: ['/node_modules/', './next/'],
   // test all and next  is where run all tests
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts(x)'],
+  collectCoverageFrom: ['src/**/*.ts(x)?', '!src/**/stories.tsx'],
   // rund before all tests
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts']
 }
